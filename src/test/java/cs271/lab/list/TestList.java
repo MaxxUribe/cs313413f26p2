@@ -41,9 +41,9 @@ public class TestList {
 
   @Test
   public void testSizeNonEmpty() {
-    // TODO fix the expected values in the assertions below
+    // DONE fix the expected values in the assertions below
     list.add(77);
-    assertEquals(true, list.isEmpty());
+    assertEquals(false, list.isEmpty());
     assertEquals(1, list.size());
     assertEquals(77, list.get(0).intValue());
   }
@@ -83,7 +83,7 @@ public class TestList {
     assertEquals(5, list.lastIndexOf(77));
     assertEquals(44, list.get(2).intValue());
     assertEquals(77, list.get(3).intValue());
-    assertEquals(List.of(33, 77, 44), list);
+    assertEquals(List.of(33, 77, 44, 77, 55, 77, 66), list);
   }
 
   @Test
@@ -127,8 +127,8 @@ public class TestList {
 
   @Test
   public void testAddAll() {
-    // TODO in a single statement using addAll and List.of,
-    list.addAll();
+    // DONE in a single statement using addAll and List.of,
+    list.addAll(List.of(33, 77, 44, 77, 55, 77, 66));
     // add items to the list to make the following assertions pass
     // (without touching the assertions themselves)
     assertEquals(7, list.size());
@@ -150,8 +150,8 @@ public class TestList {
     list.add(55);
     list.add(77);
     list.add(66);
-    // TODO in a single statement using removeAll and List.of,
-    list.removeAll(Integer.valueOf())
+    // DONE in a single statement using removeAll and List.of,
+    list.removeAll(List.of(33, 44, 55, 66));
     // remove items from the list to make the following assertions pass
     // (without touching the assertions themselves)
     assertEquals(3, list.size());
@@ -167,7 +167,8 @@ public class TestList {
     list.add(55);
     list.add(77);
     list.add(66);
-    // TODO in a single statement using retainAll and List.of,
+    // DONE in a single statement using retainAll and List.of,
+    list.retainAll(List.of(77, 77, 77));
     // remove items from the list to make the following assertions pass
     // (without touching the assertions themselves)
     assertEquals(3, list.size());
