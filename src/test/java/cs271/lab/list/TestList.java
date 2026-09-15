@@ -119,10 +119,11 @@ public class TestList {
     list.add(55);
     list.add(77);
     list.add(66);
-    // TODO using containsAll and List.of (see above),
+    // DONE using containsAll and List.of (see above),
+    assertTrue(list.containsAll(List.of(33, 77, 44, 55, 66)));
+    assertFalse(list.containsAll(List.of(11, 22, 33)));
     // 1) assert that list contains all five different numbers added
     // 2) assert that list does not contain all of 11, 22, and 33
-    fail("Not yet implemented"); // remove this line when done
   }
 
   @Test
@@ -184,7 +185,10 @@ public class TestList {
     list.add(55);
     list.add(77);
     list.add(66);
-    // TODO use the set method to change specific elements in the list
+    // DONE use the set method to change specific elements in the list
+    list.set(1, 99);
+    list.set(3, 99);
+    list.set(5, 99);
     // such that the following assertions pass
     // (without touching the assertions themselves)
     assertEquals(7, list.size());
@@ -206,8 +210,8 @@ public class TestList {
     list.add(55);
     list.add(77);
     list.add(66);
-    // TODO fix the arguments in the subList method so that the assertion
+    // DONE fix the arguments in the subList method so that the assertion
     // passes
-    assertEquals(List.of(44, 77, 55), list.subList(0, 0));
+    assertEquals(List.of(44, 77, 55), list.subList(2, 5));
   }
 }
