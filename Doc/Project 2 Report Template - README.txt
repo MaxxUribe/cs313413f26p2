@@ -37,37 +37,38 @@ TestPerformance.java
 	to get the running time in milliseconds and how the test running times were recorded.
 
 	SIZE 10
-								  #1   #2   #3   #4   #5   #6 	... (as many tests as you ran)
-        testArrayListAddRemove:  0.013 val2 val3 val4 val5 val6  ... (fill these in in ms)
-        testLinkedListAddRemove: 0.013 val2 val3 val4 val5 val6
-		testArrayListAccess:     0.007 val2 val3 val4 val5 val6
-        testLinkedListAccess:    0.013 val2 val3 val4 val5 val6
+								  #1   #2   #3  ... (as many tests as you ran)
+        testArrayListAddRemove:   14   14   14 ... (fill these in in ms)
+        testLinkedListAddRemove:  14   14   13
+		testArrayListAccess:       5    7    7
+        testLinkedListAccess:      7    7    6
 
 	SIZE 100
-								  #1   #2   #3   #4   #5   #6 	... (as many tests as you ran)
-        testArrayListAddRemove:  val1 val2 val3 val4 val5 val6  ... (fill these in in ms)
-        testLinkedListAddRemove: val1 val2 val3 val4 val5 val6
-		testArrayListAccess:     val1 val2 val3 val4 val5 val6
-        testLinkedListAccess:    val1 val2 val3 val4 val5 val6
+								  #1   #2   #3
+        testArrayListAddRemove:   22   21   23  ... (fill these in in ms)
+        testLinkedListAddRemove:  11   12   12
+		testArrayListAccess:       7    5    5
+        testLinkedListAccess:     20   22   20
 
 	SIZE 1000
-								  #1   #2   #3   #4   #5   #6 	... (as many tests as you ran)
-        testArrayListAddRemove:  val1 val2 val3 val4 val5 val6  ... (fill these in in ms)
-        testLinkedListAddRemove: val1 val2 val3 val4 val5 val6
-		testArrayListAccess:     val1 val2 val3 val4 val5 val6
-        testLinkedListAccess:    val1 val2 val3 val4 val5 val6
+								  #1   #2   #3
+        testArrayListAddRemove:  157  157  152   ... (fill these in in ms)
+        testLinkedListAddRemove:  13   11   12
+		testArrayListAccess:       5    5    5
+        testLinkedListAccess:    419  397  391
 
 	SIZE 10000
-								  #1   #2   #3   #4   #5   #6 	... (as many tests as you ran)
-        testArrayListAddRemove:  val1 val2 val3 val4 val5 val6  ... (fill these in in ms)
-        testLinkedListAddRemove: val1 val2 val3 val4 val5 val6
-		testArrayListAccess:     val1 val2 val3 val4 val5 val6
-        testLinkedListAccess:    val1 val2 val3 val4 val5 val6
+								  #1   #2   #3
+        testArrayListAddRemove: 1644 1650 1634  ... (fill these in in ms)
+        testLinkedListAddRemove:  13   11   14
+		testArrayListAccess:       5    5    5
+        testLinkedListAccess:   5095 5144 4962
 
 	listAccess - which type of List is better to use, and why?
 
-		Your answer here.
+		for access an arraylist had a much faster time complexity which was almost instantaneous. That is why it is
+		better for instant access.
 
 	listAddRemove - which type of List is better to use, and why?
 
-		Your answer here.
+		for Removal a Linked List had a much faster removal time and proves to be the better option between the two.
