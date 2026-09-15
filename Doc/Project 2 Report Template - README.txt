@@ -38,10 +38,10 @@ TestPerformance.java
 
 	SIZE 10
 								  #1   #2   #3   #4   #5   #6 	... (as many tests as you ran)
-        testArrayListAddRemove:  val1 val2 val3 val4 val5 val6  ... (fill these in in ms)
-        testLinkedListAddRemove: val1 val2 val3 val4 val5 val6
-		testArrayListAccess:     val1 val2 val3 val4 val5 val6
-        testLinkedListAccess:    val1 val2 val3 val4 val5 val6
+        testArrayListAddRemove:  0.013 val2 val3 val4 val5 val6  ... (fill these in in ms)
+        testLinkedListAddRemove: 0.013 val2 val3 val4 val5 val6
+		testArrayListAccess:     0.007 val2 val3 val4 val5 val6
+        testLinkedListAccess:    0.013 val2 val3 val4 val5 val6
 
 	SIZE 100
 								  #1   #2   #3   #4   #5   #6 	... (as many tests as you ran)
